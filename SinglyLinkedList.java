@@ -67,7 +67,7 @@ public class SinglyLinkedList<E> {
 
     // Write your codes below
     public String toString(){
-        StringBuilder sb = new StringBuilder("(");
+        StringBuilder sb = new StringBuilder("[");
         Node<E> walk = head;
         while (walk != null) {
             sb.append(walk.getElement());
@@ -76,7 +76,7 @@ public class SinglyLinkedList<E> {
             }
             walk = walk.getNext();
         }
-        sb.append(")");
+        sb.append("]");
         return sb.toString();
     }
 
